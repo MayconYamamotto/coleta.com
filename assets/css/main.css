@@ -1,0 +1,142 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font: 400 2rem "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    /* colors */
+    --white: #F2F2F2;
+    --black: #000000;
+    --green: #07D962;
+    --dark-blue: #2F2E41;
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+/* layout */
+#home {
+    background: var(--white);
+    height: 100vh;
+
+}
+
+header nav {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .navbar {
+    display: flex;
+}
+
+
+main {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* base */
+
+/* navbar */
+
+header nav .brand #logo, header nav .navbar .nav-item {
+    margin-top: 4rem;
+}
+header nav .navbar .nav-item {
+    margin: 4rem 2rem;
+}
+
+
+header nav .brand #logo {
+    font: 700 2.4rem "Poppins";
+    color: var(--green);
+}
+
+header nav .navbar .nav-item .nav-link {
+    font: 500 2rem "Poppins";
+    color: var(--dark-blue);
+    transition: .15s;
+}
+
+
+/* main */
+
+/* texts and  title*/
+main .info h1, main .info h1 .colorize-green {
+    font: 600 6.4rem "Poppins";
+}
+main .info h1, main .info p {
+    color: var(--dark-blue);
+}
+
+.colorize-green {
+    color: var(--green);
+}
+
+main .info p {
+    margin-top: 4.5rem;
+    font: 400 2.6rem "Poppins";
+}
+
+/* buttons */
+.button {
+    margin-top: 8rem;
+    
+}
+.btn {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    font: 700 2rem "Poppins";
+    border-radius: .8rem;
+    color: var(--white);
+    background: var(--dark-blue);
+    transition: .15s;
+    line-height: 0;
+    cursor: pointer;
+    
+}
+
+/* icons */
+.social-icons {
+    margin-top: 20rem;
+}
+.social-icons .icons:nth-child(1){
+    margin-right: 1rem;
+}
+
+.social-icons .icons:nth-child(2), .social-icons .icons:nth-child(3){
+    margin: 0 1rem;
+}
+
+main .bg img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Hover */
+
+header nav .navbar .nav-item .nav-link:hover {
+    border-bottom: 0.2rem solid var(--green);
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+
+}
+
+/* Focus */
